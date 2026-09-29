@@ -5,21 +5,21 @@
 class Lazysm2 < Formula
   desc "A terminal UI for hmrc/sm2"
   homepage "https://github.com/sunmingdh/lazysm2"
-  version "0.1.3"
+  version "0.1.4"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/sunmingdh/lazysm2/releases/download/v0.1.3/lazysm2_darwin_x86_64.tar.gz"
-      sha256 "07778f5e42e0966541377bbe7e2630df7e1cef6a688b4afe02ddf8d16fdce546"
+      url "https://github.com/sunmingdh/lazysm2/releases/download/v0.1.4/lazysm2_darwin_x86_64.tar.gz"
+      sha256 "23944ab508903301bf3c037161008a2b4929178964f8b4880586671532603f4c"
 
       define_method(:install) do
         bin.install "lazysm2"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/sunmingdh/lazysm2/releases/download/v0.1.3/lazysm2_darwin_arm64.tar.gz"
-      sha256 "79af66c173086de714fecfb3a1969c31943f3e93a23ea447e77ffe891b44de44"
+      url "https://github.com/sunmingdh/lazysm2/releases/download/v0.1.4/lazysm2_darwin_arm64.tar.gz"
+      sha256 "d1776c9cdc0f53b8f9c5fed99ccbe68b48c172afabb40b1198ed58f5c0b67b62"
 
       define_method(:install) do
         bin.install "lazysm2"
@@ -29,15 +29,15 @@ class Lazysm2 < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sunmingdh/lazysm2/releases/download/v0.1.3/lazysm2_linux_x86_64.tar.gz"
-      sha256 "b54abf81eaf18eb6dd43227a15c04051e61f1971d9769a48c9463b1aa453a52e"
+      url "https://github.com/sunmingdh/lazysm2/releases/download/v0.1.4/lazysm2_linux_x86_64.tar.gz"
+      sha256 "4be92aa2785a409161b7ad2d55ece96680ca9154228ec513452c77253bead5f2"
       define_method(:install) do
         bin.install "lazysm2"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sunmingdh/lazysm2/releases/download/v0.1.3/lazysm2_linux_arm64.tar.gz"
-      sha256 "02825fa9073a249038f02b5973abf71f11af126040e760159ea9c5b678d7a238"
+      url "https://github.com/sunmingdh/lazysm2/releases/download/v0.1.4/lazysm2_linux_arm64.tar.gz"
+      sha256 "73c864401b41eb85156871d0de7fe3dc9ff9af8aecdff554fd43115d84520859"
       define_method(:install) do
         bin.install "lazysm2"
       end
